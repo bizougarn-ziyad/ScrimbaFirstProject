@@ -23,13 +23,13 @@ export default function Main() {
                 <h1 className="text-3xl font-bold">Ingredients On hand : </h1>
                 <ul className="mt-5 text-xl px-13 flex flex-col gap-3">{displayData}</ul>
 
-                <div className="bg-gray-200 px-10 py-6 rounded-[10px] mt-10">
+                {ingredients.length > 3 && <div className="bg-gray-200 px-10 py-6 rounded-[10px] mt-10">
                     <h3 className="font-bold mb-1 text-[19px]">Ready for a recipe?</h3>
                     <div className="flex justify-between items-center">
                         <p className="text-[14px] text-gray-500" >Generate a recipe from your list of ingredients.</p>
                         <button className="bg-amber-600 px-4 py-2 rounded-[5px] text-white text-[14px] font-bold cursor-pointer ">Get a recipe</button>
                     </div>
-                </div>
+                </div>}
 
             </section>}
 
